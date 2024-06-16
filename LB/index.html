@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="search">
+        <input class="search-bar" id="search-input" type="text" placeholder="szukaj">
+    </div>
+    <div class="input-container">
+        <input type="text" id="input-task" placeholder="dodaj zadanie">
+        <input type="date" id="input-date" max="9999-12-31">
+        <button type="button" class="confirm-button" onclick="addTask()">Dodaj Zadanie</button>
+    </div>
+    <div id="tasksContainer">
+        <!-- Lista zadań będzie tutaj generowana dynamicznie przez JavaScript -->
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
